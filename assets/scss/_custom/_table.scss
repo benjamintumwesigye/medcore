@@ -1,0 +1,240 @@
+@use "sass:map";
+@import "./variables";
+
+// table resets
+.table-card {
+  position: relative;
+  border: 1px solid #e6edef;
+  background-color: #fff;
+  border-radius: 5px;
+}
+
+th.cell {
+  // min-width: 150px;
+  font-weight: 700;
+  color: $dark;
+  border-top: none;
+  border-bottom: none;
+  cursor: pointer;
+  white-space: nowrap;
+
+}
+
+.dark {
+  background-color: black;
+  color: $white !important;
+  border-left: none;
+  border-right: none;
+}
+
+
+th.cell .cell-border {
+  font-weight: inherit;
+  border-right: 2px solid $dark;
+  margin: 0rem -0.7rem;
+  padding: 0rem 0.7rem;
+}
+
+th.cell span {
+  font-weight: 700;
+}
+
+th:last-child.cell .cell-border {
+  display: block;
+  border-right: none;
+}
+
+th .column-filter {
+  font-weight: inherit;
+  color: inherit;
+
+  em {
+    font-size: 16px;
+  }
+}
+
+th.odd,
+td.odd {
+  background-color: #d9fdd959;
+}
+
+th.even,
+td.even {
+  background-color: #ffd0d047;
+}
+
+.bordered-cell {
+  border: 1px solid #dee2e6;
+}
+
+.bordered-cell-total {
+  font-weight: bolder;
+  background: #fff !important;
+  border: 2px solid #212529 !important;
+}
+
+.table th {
+  padding: 0.4rem 0.7rem;
+}
+
+.table td {
+  padding: 0.3rem 0.7rem;
+}
+
+.table tr {
+  background: #fff;
+
+  td {
+    white-space: nowrap;
+    color: $dark;
+  }
+}
+
+.table-sticky-column {
+  .stick {
+    position: sticky;
+    left: 0;
+    z-index: 1;
+    background: white;
+  }
+}
+
+// theming table
+.themed-table {
+  $theme-color: ("plain": ("color-solid": $primary,
+      "color-faint": rgba($primary, 0.1),
+    ),
+    "primary": ("color-solid": $primary,
+      "color-faint": #f2f8fd,
+    ),
+    "danger": ("color-solid": #e44966,
+      "color-faint": #fdf1f2,
+    ),
+    "success": ("color-solid": #2ecb84,
+      "color-faint": #e4f8ef,
+    ),
+  );
+
+  @each $color,
+  $value in $theme-color {
+    &.themed-table-#{$color} {
+      tbody tr {
+        background: #ffffff;
+
+        &:hover {
+          background: #{map.get($value, "color-faint")};
+        }
+
+        td {
+          color: $dark;
+        }
+
+        td.bordered-cell-total {
+          color: #{map.get($value, "color-solid")} !important;
+        }
+
+        &.active {
+          background: #{map.get($value, "color-solid")} !important;
+
+          td.stick {
+            background: #{map.get($value, "color-solid")} !important;
+          }
+
+          td {
+            color: #fff !important;
+          }
+
+          td.bordered-cell-total {
+            color: #{map.get($value, "color-solid")} !important;
+          }
+        }
+      }
+    }
+  }
+}
+
+.action-btn {
+  padding: 1px 10px;
+
+  &:hover {
+    background: #f5f5f5;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+}
+
+// sticky first column
+
+th.odd,
+td.odd {
+  background-color: #d9fdd959;
+}
+
+th.even,
+td.even {
+  background-color: #ffd0d047;
+}
+
+td .table-group-heading {
+  position: sticky;
+  left: 10px;
+}
+
+// excel
+table.excel-table {
+  thead {
+    background-color: #f0f0f0;
+  }
+
+  th,
+  td {
+    font-weight: lighter;
+  }
+
+  td.index-column {
+    padding: 0rem 0.7rem;
+    background-color: #f0f0f0;
+  }
+
+  td {
+    padding: 0px;
+  }
+
+  td>input {
+    outline: none;
+    border: none;
+    padding: 0px 5px;
+    width: 100%;
+    line-height: 2;
+  }
+
+  // resize table columns
+  th {
+    position: relative;
+  }
+
+  .resizer {
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 5px;
+    cursor: col-resize;
+    user-select: none;
+  }
+
+  .resizer:hover,
+  .resizing {
+    border-right: 2px solid $primary;
+  }
+
+  .resizable {
+    border: 1px solid gray;
+    height: 100px;
+    width: 100px;
+    position: relative;
+  }
+}
+
+.table {
+  margin-bottom: 0 !important;
+}

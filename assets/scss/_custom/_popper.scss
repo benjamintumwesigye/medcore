@@ -1,0 +1,57 @@
+@import "./variables";
+
+.popover {
+  max-width: 100%;
+  font-family: "Nunito", sans-serif !important;
+  box-shadow: 0px 0px 5px 4px #8080802b;
+}
+
+.custom-popper {
+  background: $primary;
+  color: white;
+  font-weight: bold;
+  padding: 8px;
+  font-size: 13px;
+  border-radius: 10px;
+  white-space: nowrap;
+  display: none;
+  z-index: 100;
+}
+
+.custom-popper[data-show] {
+  display: block;
+}
+
+#arrow,
+#arrow::before {
+  position: absolute;
+  width: 8px;
+  height: 8px;
+  background: inherit;
+}
+
+#arrow {
+  visibility: hidden;
+}
+
+#arrow::before {
+  visibility: visible;
+  content: "";
+  transform: rotate(45deg);
+}
+
+.custom-popper[data-popper-placement^="top"] > #arrow {
+  bottom: -4px;
+}
+
+.custom-popper[data-popper-placement^="bottom"] > #arrow {
+  top: -4px;
+}
+
+.custom-popper[data-popper-placement^="left"] > #arrow {
+  right: -4px;
+}
+
+.custom-popper[data-popper-placement^="right"] > #arrow {
+  left: -4px;
+}

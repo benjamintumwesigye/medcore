@@ -1,0 +1,13 @@
+@import "./bootstrap_variables";
+
+.theme-green .bs-datepicker-head {
+  background-color: $primary !important;
+}
+
+.theme-green .bs-datepicker-body table td span.selected {
+  background-color: $primary !important;
+}
+
+.theme-green .bs-datepicker-body table td.week span {
+  color: $primary;
+}

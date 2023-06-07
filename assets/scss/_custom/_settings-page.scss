@@ -1,0 +1,29 @@
+$header-size: 50px;
+
+/**=====================
+    05. Header CSS Start
+==========================**/
+
+/*======= Page Header css Start ======= */
+.settings-sidebar {
+  position: absolute;
+  margin-top: -5px;
+  display: flex;
+  width: 200px;
+  height: 100%;
+  align-items: center;
+  padding: $main-header-right-padding;
+  border-right: 1px solid $light-gray;
+  .dark-logo-wrapper {
+    display: none;
+  }
+}
+
+.settings-body {
+  margin-left: 200px;
+}
+/*======= Page Header css ends  ======= */
+
+/**=====================
+    05. Header CSS Ends
+==========================**/

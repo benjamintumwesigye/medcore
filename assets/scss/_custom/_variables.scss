@@ -1,0 +1,268 @@
+$theme-font-color: #2b2b2b;
+$theme-body-font-color: #242934;
+$theme-body-sub-title-color: rgba($theme-body-font-color, 0.7);
+
+// $primary-color: #d97f3d;
+// $secondary-color: #5a5452;
+// $success-color: #1ba354;
+// $info-color: #5575c9;
+// $warning-color: #fec061;
+// $danger-color: #dc3545;
+// $dark-color: #0a1b29;
+
+$primary-color: #1976d2;
+$secondary-color: #ffffff;
+$success-color: #6fcf97;
+$info-color: #e5a0ff;
+$warning-color: #f2974c;
+$danger-color: #eb5757;
+$dark-color: #0a1b29;
+$light-color: #f8f9fa;
+
+// bootstrap buttons
+$primary: $primary-color;
+$secondary: $secondary-color;
+$success: $success-color;
+$info: $info-color;
+$warning: $warning-color;
+$danger: $danger-color;
+
+$grey-600: #828282;
+$muted: #6c757d;
+$muted-extra: #b6babe;
+$body-bg: #eeeeee4e;
+
+$blue: #0d6efd;
+$indigo: #6610f2;
+$purple: #6f42c1;
+$pink: #d63384;
+$red: #dc3545;
+$orange: #f4623a;
+$yellow: #ffc107;
+$green: #198754;
+$teal: #20c997;
+$cyan: #0dcaf0;
+$white: #fff;
+$gray: #6c757d;
+$gray-dark: #343a40;
+$gray-100: #f8f9fa;
+$gray-200: #e9ecef;
+$gray-300: #dee2e6;
+$gray-400: #ced4da;
+$gray-500: #adb5bd;
+$gray-600: #6c757d;
+$gray-700: #495057;
+$gray-800: #343a40;
+$gray-900: #212529;
+$primary-rgb: 244, 98, 58;
+$secondary-rgb: 108, 117, 125;
+$success-rgb: 25, 135, 84;
+$info-rgb: 13, 202, 240;
+$warning-rgb: 255, 193, 7;
+$danger-rgb: 220, 53, 69;
+$light-rgb: 248, 249, 250;
+$dark-rgb: 33, 37, 41;
+$white-rgb: 255, 255, 255;
+$black-rgb: 0, 0, 0;
+$body-color-rgb: 33, 37, 41;
+$body-bg-rgb: 255, 255, 255;
+
+$gray-60: #cccccc;
+
+$semi-dark: #59667a;
+$light-color: $white;
+$light-gray: $gray-200;
+$light-background: #f5f7fb;
+$light-font: #717171;
+$light-semi-font: $gray-700;
+$light-semi-gray: $light-gray;
+$light-text: $gray-500;
+$dark-gray: $gray;
+
+$common-shadow-color: rgba($light-font, 0.08);
+
+$transparent-color: transparent;
+
+// dark layout variables
+$dark-body-background: #202938;
+$dark-card-background: #111727;
+$dark-card-inbox: #323846;
+$dark-small-font-color: #98a6ad;
+$dark-all-font-color: rgba(255, 255, 255, 0.7);
+$light-all-font-color: rgba(255, 255, 255, 0.2);
+$sidebar-submenu-font-color: rgba(255, 255, 255, 0.7);
+$dark-border-color: $dark-body-background;
+// $dark-card-border:#374558;
+$dark-card-border: rgba($primary-color, 0.2);
+$dark-editor-document: #2b2b2b;
+$bg-dark-color: #1f2533;
+$dark-datatable-odd: #1f232b;
+$dark-datatable-sorting: #1c212b;
+$dark-datatable-sorting-even: #22262f;
+$dark-even-hover-sorting: #191e27;
+
+//fonts
+$font-montserrat: "Montserrat", sans-serif;
+$font-roboto: "Roboto", sans-serif;
+$font-rubik: "Rubik", sans-serif;
+$font-nunito: "Nunito", sans-serif;
+$font-raleway: Raleway;
+$font-serif: sans-serif;
+$font-themify: themify;
+$font-awesome: FontAwesome;
+$font-ICO: IcoFont;
+
+$gradient: linear-gradient(180deg, rgba(255, 255, 255, 0.15), rgba(255, 255, 255, 0));
+$body-font-family: Merriweather, -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Helvetica Neue, Arial, Noto Sans, sans-serif, Apple Color Emoji, Segoe UI Emoji, Segoe UI Symbol, Noto Color Emoji;
+$body-font-size: 14px;
+$body-font-weight: 400;
+$body-line-height: 1.5;
+$body-color: #212529;
+
+
+//page settings
+$page-body-padding: 15px 0px;
+// $page-body-bg-color: $light-gray;
+$page-body-margin-bottom: 0px;
+
+$page-header-padding: 5px;
+
+$common-box-shadow: 2px 3.464px 8px 0px rgba(22, 145, 248, 0.18);
+$page-title-font-size: 24px;
+$page-title-margin-bottom: 0;
+$page-title-font-weight: 600;
+$page-title-text-tranform: capitalize;
+$page-small-title-display: block;
+$page-small-title-font-size: 12px;
+$page-small-title-margin-bottom: 5px;
+$page-small-title-text-transform: capitalize;
+$page-small-title-text-color: $theme-body-sub-title-color;
+$breadcrumb-size: 16px;
+$breadcrumb-content: "/";
+
+// General variables
+$theme-font-color: #2b2b2b;
+$theme-body-font-color: #242934;
+$theme-body-sub-title-color: rgba($theme-body-font-color, 0.7);
+
+//General tag settings
+// $body-font-size: 14px;
+$body-font-color: $body-color;
+$ul-padding-left: 0px;
+$ul-padding-right: 0px;
+$ancher-color: $primary-color;
+$btn-focus-box-shadow: none;
+$all-focus-outline-color: $primary-color;
+
+$paragraph-font-size: 14px;
+$paragraph-line-height: 1.7;
+$paragraph-letter-spacing: inherit;
+
+//sidabr main settings
+$sidebar-width: 255px;
+$sidebar-position: fixed;
+$sidebar-background-color: $white;
+$sidebar-shadow: 0 0 11px rgba(69, 110, 243, 0.13);
+$sidebar-overflow: auto;
+$sidebar-z-index: 9;
+$sidebar-transition: 0.5s;
+
+//Header settings
+$main-header-position: fixed;
+$main-header-top: 0;
+$main-header-shadow: 0 0 20px rgba(25, 124, 207, 0.08);
+$bookmark-icon-color: #fa9f44;
+
+//main header left settings
+$main-header-left-bg-color: $white;
+$main-header-padding: 27px 22px;
+$main-header-z-index: 9;
+$main-header-right-padding: 0px 5px;
+$main-header-right-nav-icon-size: 18px;
+$main-header-right-nav-icon-color: $theme-font-color;
+$main-header-right-nav-icon-align: middle;
+
+// Tables settings
+$table-b-margin: 0px;
+$table-heading-color: $theme-body-font-color;
+$table-row-color: $theme-body-font-color;
+$table-footer-font-weight: bold;
+$table-inverse-color: $white;
+$table-hover-color: $light-rgb;
+$table-padding: 0.75rem;
+$table-xl-padding: 1.25rem 2rem;
+$table-xl-font: 120%;
+$table-lg-padding: 0.9rem 2rem;
+$table-lg-font: 110%;
+$table-de-padding: 0.75rem 2rem;
+$table-de-font: 100%;
+$table-sm-padding: 0.5rem 2rem;
+$table-sm-font: 90%;
+$table-xs-padding: 0.2rem 2rem;
+$table-xs-font: 80%;
+$horizontal-border-color: #f2f4ff;
+$horizontal-padding: 0.75rem 2rem;
+$table-inverse-bg-color: #292b2c;
+
+//footer settings
+$footer_bg_color: $white;
+$footer_box_shadow: 0 0 20px 16px rgba(4, 122, 251, 0.04);
+$footer_link_align: right;
+$footer_dark_color: $theme-font-color;
+$footer_dark__txt_color: $white;
+
+$color-map: (
+  "success": $success-color,
+  "primary": $primary-color,
+  "warning": $warning-color,
+  "danger": $danger-color,
+  "info": $info-color,
+  "light": $light-color,
+  "dark": $dark-color
+);
+
+
+// Merge the maps
+$theme-colors: map-merge($color-map, $color-map);
+
+$alert-background: $color-map;
+
+$label-name:theme,
+primary,
+secondary,
+success,
+danger,
+info,
+light,
+dark,
+warning;
+
+// $font-size-root affects the value of `rem`, which is used for as well font sizes, paddings, and margins
+// $font-size-base affects the font size of the body text
+$font-size-root:              null;
+$font-size-base:              0.875rem; // Assumes the browser default, typically `16px`
+$font-size-sm:                $font-size-base * .875;
+$font-size-lg:                $font-size-base * 1.25;
+
+$font-weight-lighter:         lighter;
+$font-weight-light:           300;
+$font-weight-normal:          400;
+$font-weight-bold:            700;
+$font-weight-bolder:          bolder;
+
+$font-weight-base:            $font-weight-normal;
+
+$line-height-base:            1.5;
+$line-height-sm:              1.25;
+$line-height-lg:              2;
+
+$h1-font-size:                $font-size-base * 2.5;
+$h2-font-size:                $font-size-base * 2;
+$h3-font-size:                $font-size-base * 1.75;
+$h4-font-size:                $font-size-base * 1.5;
+$h5-font-size:                $font-size-base * 1.25;
+$h6-font-size:                $font-size-base;
+$small-font-size:             .85em;
+
+$input-bg: $white;
+$accordion-bg: $white;
